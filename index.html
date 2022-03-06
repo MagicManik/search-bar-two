@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Search Bar One</title>
+</head>
+
+<body>
+    <main>
+        <section>
+            <div class="logo">
+                <img src="img/googlelogo_color_272x92dp.png" alt="">
+            </div>
+
+
+
+            <!-- =============Search Field=============== -->
+            <div class="search-div">
+                <input id="search-field" type="text" class="search-field" placeholder="">
+
+                <button onclick="searchButton()" class="camera-button" type="button">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="21" height="21" viewBox="0 0 172 172"
+                        style=" fill:#000000;">
+                        <g transform="">
+                            <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                                stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                                font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                                style="mix-blend-mode: normal">
+                                <path d="M0,172v-172h172v172z" fill="none"></path>
+                                <path d="" fill="none"></path>
+                                <g>
+                                    <path
+                                        d="M158.71999,50.36698l-22.18236,-6.82625l-5.35135,-17.84016c-1.68261,-5.70063 -6.92969,-9.60355 -12.87339,-9.57556h-64.62577c-5.94397,-0.02769 -11.19104,3.87584 -12.87313,9.57691l-5.35135,17.83882l-22.18236,6.82625c-7.91322,2.40098 -13.31242,9.71107 -13.28028,17.98045v68.71508c0.012,10.38488 8.42762,18.8005 18.8125,18.8125h134.375c10.38488,-0.012 18.8005,-8.42762 18.8125,-18.8125v-68.71507c0.03217,-8.26931 -5.3669,-15.57938 -13.28001,-17.98045z"
+                                        fill="#c9c9c9"></path>
+                                    <circle cx="32" cy="35" transform="scale(2.6875,2.6875)" r="15" fill="#4294ff">
+                                    </circle>
+                                    <path
+                                        d="M59.125,96.75c-1.48427,0 -2.6875,-1.20323 -2.6875,-2.6875c0.01851,-16.31924 13.24326,-29.54399 29.5625,-29.5625c1.48427,0 2.6875,1.20323 2.6875,2.6875c0,1.48427 -1.20323,2.6875 -2.6875,2.6875c-13.35225,0.01481 -24.17269,10.83525 -24.1875,24.1875c0,1.48427 -1.20323,2.6875 -2.6875,2.6875z"
+                                        fill="#2946ed"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+
+                </button>
+
+
+                <button onclick="searchButton()" class="mic-button" type="button">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 172 172"
+                        style=" fill:#000000;">
+                        <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                            stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                            font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                            style="mix-blend-mode: normal">
+                            <path d="M0,172v-172h172v172z" fill="none"></path>
+                            <g>
+                                <path
+                                    d="M123.625,80.625c0,-2.96853 -2.40647,-5.375 -5.375,-5.375c-2.96853,0 -5.375,2.40647 -5.375,5.375c0,14.84265 -12.03235,26.875 -26.875,26.875c-14.84265,0 -26.875,-12.03235 -26.875,-26.875c0,-2.96853 -2.40647,-5.375 -5.375,-5.375c-2.96853,0 -5.375,2.40647 -5.375,5.375c0.03343,18.68232 13.76092,34.51469 32.25,37.195v16.555h-5.375c-2.96853,0 -5.375,2.40647 -5.375,5.375c0,2.96853 2.40647,5.375 5.375,5.375h21.5c2.96853,0 5.375,-2.40647 5.375,-5.375c0,-2.96853 -2.40647,-5.375 -5.375,-5.375h-5.375v-16.555c18.48908,-2.68031 32.21657,-18.51268 32.25,-37.195z"
+                                    fill="#ea4335"></path>
+                                <path
+                                    d="M86,102.125c11.86896,-0.01244 21.48756,-9.63104 21.5,-21.5v-32.25c0,-11.87412 -9.62588,-21.5 -21.5,-21.5c-11.87412,0 -21.5,9.62588 -21.5,21.5v32.25c0.01244,11.86896 9.63104,21.48756 21.5,21.5z"
+                                    fill="#fbbc05"></path>
+                                <path
+                                    d="M91.375,117.82v16.555h5.375c2.96853,0 5.375,2.40647 5.375,5.375c0,2.96853 -2.40647,5.375 -5.375,5.375h-21.5c-2.96853,0 -5.375,-2.40647 -5.375,-5.375c0,-2.96853 2.40647,-5.375 5.375,-5.375h5.375v-16.555c-18.49156,-2.67577 -32.22141,-18.51087 -32.25,-37.195c0,-2.96853 2.40647,-5.375 5.375,-5.375c2.96853,0 5.375,2.40647 5.375,5.375c0.01092,11.69415 7.57588,22.04156 18.71567,25.59942c11.13978,3.55786 23.30204,-0.48901 30.08933,-10.01192c3.06703,1.85749 6.24414,3.52682 9.51375,4.99875c-5.89565,9.02866 -15.39448,15.08049 -26.06875,16.60875z"
+                                    fill="#6c19ff"></path>
+                                <path
+                                    d="M103.415,93.2025c-5.45301,7.56512 -15.16355,10.74882 -24.03717,7.88083c-8.87362,-2.86799 -14.88396,-11.13275 -14.87783,-20.45833v-32.25c-0.01065,-1.28184 0.11548,-2.56117 0.37625,-3.81625c8.35846,19.31349 21.64922,36.08913 38.53875,48.64375z"
+                                    fill="#34a853"></path>
+                            </g>
+                        </g>
+                    </svg>
+                </button>
+
+
+                <button onclick="searchButton()" class="search-button" type="button">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 48 48"
+                        style=" fill:#000000;">
+                        <path fill="#3dd9eb"
+                            d="M20,4C11.164,4,4,11.164,4,20c0,8.836,7.164,16,16,16c8.836,0,16-7.164,16-16 C36,11.164,28.836,4,20,4">
+                        </path>
+                        <path fill="#6c19ff"
+                            d="M33.235,28.993c-1.135,1.667-2.576,3.108-4.243,4.243l11.386,11.386l4.243-4.243L33.235,28.993">
+                        </path>
+                        <path fill="#00b3d7"
+                            d="M29.121,24.879l-4.243,4.243l4.114,4.114c1.667-1.135,3.108-2.576,4.243-4.243L29.121,24.879">
+                        </path>
+                    </svg>
+
+                </button>
+            </div>
+
+
+        </section>
+    </main>
+
+    <script src="js/mealdb.js"></script>
+</body>
+
+</html>
